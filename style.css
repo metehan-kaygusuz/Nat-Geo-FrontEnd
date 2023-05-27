@@ -1,0 +1,598 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Electrolize', sans-serif ,'Open Sans',  'Roboto', sans-serif;
+}
+body{
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  height: 100%;
+  
+}
+.navleft img {
+  width: 130px;
+  height: auto;
+}
+.navright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 49px;
+}
+.navright a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  align-self: center;
+}
+.navright i {
+  margin-left: 6px;
+  font-size: 1rem;
+}
+#newsletter {
+  font-size: 1rem;
+  text-decoration: underline;
+  text-decoration-color:rgb(236, 236, 4);
+  text-decoration-thickness: 3px;
+}
+#newsletter {
+  background-image: linear-gradient(rgb(236, 236, 4));
+  background-size: 100% 0;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: 0.3s;
+}
+#subscribe {
+  background-color: black;
+  color: white;
+  background-image: linear-gradient(rgb(236, 236, 4), rgb(199, 199, 9));
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 130px;
+  background-size: 0 100%;
+  transition: 0.4s;
+}
+#subscribe p {
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+}
+#subscribe:hover{
+  color: black;
+  background-size: 100% 100%;
+}
+#newsletter:hover {
+  background-color: rgb(236, 236, 4);
+  background-size: 100% 100%;
+}
+.MainContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color:white;
+  
+}
+.ContentTitle h1{
+  margin-top: 60px;
+  padding: 20px 0;
+  font-size: 3.5rem;
+}
+.ContentTitle p{
+  font-size: 1.2rem;
+}
+.ContentTitle a{
+  text-decoration-color:rgb(236, 236, 4);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  background-position: bottom;
+  transition: 0.3s;
+}
+.ContentTitle a:hover {
+  background-color: rgb(236, 236, 4);
+  background-size: 100% 100%;
+}
+.seeMore a {
+  background-image: linear-gradient(rgb(236, 236, 4) 0 0);
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  background-position: bottom;
+  transition: 0.3s;
+}
+
+.issues h1{
+  margin-top: 60px;
+  padding: 20px 0;
+  font-size: 3.5rem;
+  color: white;
+  margin-left: 32%;
+}
+.issues p{
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+.issues a{
+  text-decoration-color:rgb(236, 236, 4);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  background-position: bottom;
+  transition: 0.3s;
+}
+.issues a:hover {
+  background-color: rgb(236, 236, 4);
+  background-size: 100% 100%;
+}
+.mark-line{
+  width: 70px;
+  height: 2px;
+  margin-top: 30px;
+  margin-left: 650px;
+  display: flex;
+  border: solid 3px rgb(236, 236, 4);
+}
+  .sides {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .sideLeft {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  .sideLeft h2 {
+    border-left: 3px solid rgb(236, 236, 4);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  .sideRight {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    margin: 0 50px;
+  }
+  .picks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .pick {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  .pick img {
+    flex-basis: 20%;
+    width: 90px;
+    height: 90px;
+  }
+  .pickRight {
+    flex-basis: 65%;
+  }
+  .pickRight p {
+    text-align: start;
+    color: white;
+  }
+  .pickRight h3 {
+    margin-bottom: 8px;
+    text-align: start;
+    color: white
+  }
+  .pickRight h4 {
+    margin-bottom: 8px;
+    text-align: start;
+    color: black;
+  }
+  .pickRight h3 i {
+    margin-right: 10px;
+  
+    
+  }
+  .pick:hover p {
+    text-decoration: underline;
+  }
+  .paidContent {
+    background-color:white;
+    color: black;
+  }
+  .seeMore {
+    margin-top: 30px;
+    text-align: start;
+  }
+
+  .movie-list-container{
+    margin-left: 70px;
+    margin-bottom: 100px;
+  }
+  .movie-list-title{
+    color: white;
+    margin-bottom: 10px;
+  }
+  .movie-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  .movie-img{
+    width: 220px;
+    height: 250px;
+  }
+  .movie-img:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+    
+  }
+  .nat-geo-tv{
+    margin-bottom: 100px;
+  }
+  .nat-geo-title{
+    text-align: center;
+    color: white;
+  }
+  .movie-container{
+    display:flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+  }
+  .movie-container img{
+    width: 250px;
+    height: 300px;
+  }
+  .movie1{
+    position: relative;
+    left: 275px;
+    z-index: -2;
+  }
+  .movie2{
+    position: relative;
+    left: 130px;
+    z-index: -1;
+    
+  }
+  .movie3{
+    z-index: 1;
+  }
+  .movie4{
+    position: relative;
+    z-index: -1;
+    right: 130px;
+  }
+  .movie5{
+    position: relative;
+    z-index: -2;
+    right: 275px;
+  }
+  
+  
+  .contentTitleTravel{
+    margin-left: 50%;
+    padding-top: 50px;
+    
+  }
+  .readMain {
+    flex-basis: 40%;
+  }
+  .readBottom {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  .read {
+    flex-basis: 50%;
+    height: 450px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  .read img {
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.4s;
+  }
+  .read h4 {
+    position: absolute;
+    bottom: 120px;
+    left: 30px;
+  }
+  .read p {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: start;
+  }
+  .read a {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: start;
+  }
+  .read:hover img {
+    transform: scale(1.2);
+  }
+  .readCard {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 20px;
+  }
+  .readCardTop {
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .readCardTop img {
+    width: 100%;
+    transition: all 0.4s;
+    height: 200px;
+  }
+  .readCardBottom {
+    position: relative;
+    background-color: white;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+    align-items: start;
+    padding: 0 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  .readCardBottom h4 {
+    color: black;
+  }
+  .readCardBottom h5 {
+    color: black;
+  }
+  .readCardBottom p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .readCardBottom a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .readCard:hover .readCardTop img {
+    transform: scale(1.1);
+  }
+  .readCard:hover .readCardBottom {
+    border-top: 5px solid rgb(236, 236, 4);
+  }
+  .secondReadCard {
+    box-shadow: 5px 5px rgb(236, 236, 4);
+  }
+  .secondReadCard .readCardBottom {
+    background-color: black;
+  }
+  .secondReadCard .readCardBottom p,
+  .secondReadCard .readCardBottom h4,
+  .secondReadCard .readCardBottom h5,
+  .secondReadCard .readCardBottom a {
+    color: white;
+  }
+
+  .podcast-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    width: 100%;
+    padding: 100px 0;
+  }
+  .podcast-container h2 {
+    color: black;
+    font-size: 4rem;
+    margin-bottom: 100px;
+  }
+  .podcastCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+  }
+  .podcastCard {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 20px;
+  }
+  .podcastCard p {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: start;
+  }
+  .podcastCard img {
+    width: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .podcastCard:hover img {
+    transform: scale(1.2);
+  }
+  #applePodcast {
+    background-color: white;
+    color: black;
+    background-image: linear-gradient(rgb(236, 236, 4), rgb(199, 199, 9));
+    font-weight: 500;
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  #applePodcast:hover,
+  #signUp:hover {
+    background-size: 100% 100%;
+      color:white ;
+  }
+  .signUpBottom {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/signupBackground.jpg);
+  }
+  .signUpBottom h1{
+    color: white;
+  }
+  .signUpBottom p{
+    color: white;
+  }
+  #signUp {
+    background-color:white;
+    color: black;
+    background-image: linear-gradient(rgb(236, 236, 4), rgb(199, 199, 9));
+    font-weight: 500;
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .footerTop {
+    margin-bottom: 60px;
+  }
+  .footerTop ul {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .footerTop ul li {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0 50px;
+  }
+  .footerTop ul li h3 {
+    margin: 50px 0 20px;
+    font-weight: 600;
+  }
+  .footerTop ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+  }
+  .footerTop ul li a:hover {
+    text-decoration: underline;
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .social i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  #USFlag {
+    width: 30px;
+    height: 20px;
+  }
+  .social i:hover {
+    color: rgb(236, 236, 4);
+  }
+  .footerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid gray;
+  }
+  .footerBottom img {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .footerBottom p {
+    color: gray;
+    padding: 0 20px;
+  }
+  #footerBottomBorder {
+    border-right: 2px solid gray;
+  }
+  .travelContent {
+    background: linear-gradient(to top, black, transparent),
+      url(images/volcanobackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mission {
+    background: white;
+    width: 100%;
+    color: black;
+    padding: 60px 0;
+  }
+  .mission h1 {
+    font-size: 2rem;
+    margin-left: 20%;
+  }
+  .missionBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .missionBottomRight {
+    text-align: start;
+    width: 500px;
+    padding: 0 50px;
+  }
+  .missionBottomRight h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
